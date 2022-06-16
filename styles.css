@@ -1,0 +1,107 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-weight: 400;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.counts p {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: Lexend Deca;
+  line-height: 1.5;
+  margin: 0;
+}
+span {
+  color: hsl(277, 64%, 61%);
+}
+.container {
+  background-color: hsl(244, 38%, 16%);
+  margin: 20vh auto;
+  width: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+.header-text {
+  width: 35%;
+  padding: 50px 50px 50px 50px;
+}
+.header-image {
+  width: 50%;
+
+  background-image: url(images/image-header-desktop.jpg);
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.5;
+}
+.counts {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 85%;
+}
+@media (min-width: 376px) {
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  .flex-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-text {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .header-intro p {
+    width: 80%;
+    margin: auto;
+    line-height: 2;
+  }
+  .header-intro h1 {
+    font-size: 25px;
+    padding: 30px 35px;
+    margin-bottom: 0;
+  }
+  .header-image {
+    width: 100%;
+    height: 230px;
+    background-size: cover;
+
+    background-image: url(images/image-header-mobile.jpg);
+  }
+  .counts {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .count-items {
+    margin: 10px;
+  }
+}
